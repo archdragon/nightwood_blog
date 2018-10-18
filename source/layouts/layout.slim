@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta charset="utf-8"
+    meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
+
+    title = current_page.data.title || "The Middleman"
+
+    link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
+
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+
+    link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet" type="text/css"
+
+    == stylesheet_link_tag :site
+    == javascript_include_tag  "all"
+
+  body class="#{page_classes}"
+    .container
+      .col-md-12
+        .blog-title
+          h1
+            a href="http://nightwood.net/blog" Blog Nightwood
+
+        .inner-box
+          == yield
+
+    .container
+      .col-md-12
+        .dark-panel__head
+          span Jak być na bieżąco z nowościami?
+        .dark-panel__body
+          h4 Lista Mailingowa
+          p Zapisz się na Nightwoodową Listę Mailingową, aby otrzymać informację o nowych postach i aktualizacjach gry.
+          p
+            center
+              img src="../images/envelope_guy.png" width="120"
+
+          p
+            <div id="mc_embed_signup">
+              <form action="https://archdragon.us6.list-manage.com/subscribe/post?u=6f8b367c05002f057fafaed37&amp;id=e31030ac36" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <table align="center">
+                    <tr>
+                      <td>
+
+                        <div class="mc-field-group email-inline" style="float: left; margin-right: 5px">
+                          <input type="email" value="" name="EMAIL" placeholder="Twój email"  class="required email" id="mce-EMAIL">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6f8b367c05002f057fafaed37_e31030ac36" tabindex="-1" value=""></div>
+                      </td>
+                      <td>
+                        <input type="submit" value="Zapisz się!" name="subscribe" id="mc-embedded-subscribe" class="email-inline button">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </form>
+            </div>
+
+          h4 Strona Nightwood na Facebooku
+          p
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmokinightwood%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=113869198637480" width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

@@ -1,0 +1,11 @@
+---
+title: Welcome to Middleman
+---
+
+h2 Ostatnie Wpisy
+
+- blog.articles[0...5].each do |article|
+  article
+    h4
+      a href="#{article.url}" = article.title
+    p = article.data.custom_summary
