@@ -44,5 +44,7 @@ configure :build do
 end
 
 activate :blog do |blog|
-  blog.permalink = "post/{custom_slug}.html"
+  blog.permalink = "posts/{custom_slug}.html"
 end
+
+set :relative_links, true
