@@ -7,7 +7,7 @@ $grid-base: 18px;
 
 body {
   background-color: #161e29;
-  background-image: url(/images/mountains_bg.jpg);
+  background-image: image-url("mountains_bg.jpg");
   background-position: top center;
   background-repeat: repeat-x;
   background-size: 800px 520px;
@@ -41,14 +41,14 @@ blockquote {
 
 .inner-box {
   background-color: #f6f2e5;
-  background-image: url(/images/paper2.jpg);
+  background-image: image-url("paper2.jpg");
   background-size: 1000px 650px;
   border-style: solid;
   border-width: 1px;
   border-image-repeat: repeat;
   border-image-slice: 24;
   border-image-width: 12px;
-  border-image-source: url(/images/borders/thick_decorative.png);
+  border-image-source: image-url("borders/thick_decorative.png");
   box-shadow: inset 0px 0px 50px rgba(80, 50, 30, 0.8), 0px 0px 20px rgba(0, 0, 0, 0.4);
   position: relative;
   z-index: 2;
@@ -97,7 +97,7 @@ h4 a {
   font-weight: bold;
   font-size: 1.05rem;
   font-family: "Raleway", sans-serif;
-  background: url('/images/panels/dark_header.jpg');
+  background: image-url('panels/dark_header.jpg');
   background-size: 1140px 119px;
   border-radius: 5px 5px 0 0;
   color: #999;
@@ -113,7 +113,7 @@ h4 a {
 }
 
 .dark-panel__subheader {
-  background-image: url('/images/panels/dark_body.jpg');
+  background-image: image-url('panels/dark_body.jpg');
   background-size: 1140px 1140px;
   border: 2px solid #212e42;
   border-bottom: 0;
@@ -129,7 +129,7 @@ h4 a {
 }
 
 .dark-panel__body {
-  background-image: url('/images/panels/dark_body.jpg');
+  background-image: image-url('panels/dark_body.jpg');
   background-size: 1140px 1140px;
   color: $color-blue;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
@@ -184,4 +184,14 @@ input[type="submit"]:hover {
 
 #mc_embed_signup {
   margin-bottom: $grid-base * 3;
+}
+
+.dragon-over-frame {
+  background-image: image-url('dragon_over_frame.png');
+  background-size: 276px 607px;
+  height: 607px;
+  position: absolute;
+  right: -94px;
+  top: -192px;
+  width: 276px;
 }

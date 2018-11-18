@@ -5,7 +5,9 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = current_page.data.title || "The Middleman"
+    title = current_page.data.title || "Blog gry Smoki Nightwood"
+
+    == favicon_tag "/images/favicon.png"
 
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
 
@@ -24,6 +26,7 @@ html
             a href="http://nightwood.net/blog" Blog Nightwood
 
         .inner-box
+          .dragon-over-frame
           == yield
 
     .container
@@ -35,7 +38,7 @@ html
           p Zapisz się na Nightwoodową Listę Mailingową, aby otrzymać informację o nowych postach i aktualizacjach gry.
           p
             center
-              img src="../images/envelope_guy.png" width="120"
+              = image_tag "envelope_guy.png", width: "120"
 
           p
             <div id="mc_embed_signup">

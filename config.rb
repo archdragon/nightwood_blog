@@ -41,10 +41,10 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+  set :http_prefix, "/blog/"
 end
 
 activate :blog do |blog|
   blog.permalink = "posts/{custom_slug}.html"
 end
 
-set :relative_links, true
