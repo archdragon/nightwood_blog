@@ -16,7 +16,6 @@ html
     link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:400" rel="stylesheet" type="text/css"
 
     == stylesheet_link_tag :site
-    == javascript_include_tag  "all"
 
   body class="#{page_classes}"
     .container
@@ -27,6 +26,8 @@ html
 
         .inner-box
           .dragon-over-frame
+            .eye.eye1
+            .eye.eye2
           == yield
 
     .container
@@ -71,3 +72,5 @@ html
           h4 Strona Nightwood na Facebooku
           p
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmokinightwood%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=113869198637480" width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+    == javascript_include_tag  "all"
