@@ -32,6 +32,21 @@ blockquote {
   line-height: 1.75;
 }
 
+.tech-info {
+  color: #4a5c80;
+  font-style: italic;
+  background-color: #446f841f;
+  padding: 2em;
+  padding-bottom: 1em;
+  border-radius: 5px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+
+  .title {
+    font-weight: bold;
+  }
+}
+
 .container {
   max-width: 800px;
 }
@@ -60,11 +75,13 @@ blockquote {
 
 h1, h2, h3, h4 {
   font-family: 'Crimson Text', serif;
-  color: #483625;
+  color: inherit;
 }
 
 h2 {
   background-color: rgba(142, 128, 77, 0.1);
+  color: #b14226;
+  font-weight: bold;
   margin-top: -18px;
   margin-left: -38px;
   margin-right: -38px;
@@ -74,7 +91,17 @@ h2 {
 }
 
 h3 {
+  color: #b14226;
+  font-weight: bold;
   padding: 2rem 0 0.5rem 0;
+  font-size: 1.75rem;
+}
+
+h4 {
+  color: #b14226;
+  font-size: 1.35rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
 }
 
 h4 a {
