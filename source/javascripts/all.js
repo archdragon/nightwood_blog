@@ -18,3 +18,29 @@ document.addEventListener("mousemove", function(e) {
   eye0.style.transform = "rotate(" + angle0 + "deg)";
   eye1.style.transform = "rotate(" + angle1 + "deg)";
 });
+
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+  return array;
+}
+
+let shuffleItemsContainers = document.querySelectorAll(".shuffle-items");
+[].forEach.call(shuffleItemsContainers, function(container) {
+  let items = container.querySelectorAll(".shuffle-item");
+  let itemsArray = [];
+  [].forEach.call(items, function (item) {
+    itemsArray.push(item);
+  })
+
+  items = shuffleArray(itemsArray)
+  container.innerHTML = "";
+
+  items.forEach(function (item) {
+    container.appendChild(item);
+  })
+});

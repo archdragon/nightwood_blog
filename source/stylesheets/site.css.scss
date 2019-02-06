@@ -262,3 +262,31 @@ input[type="submit"]:hover {
     box-shadow: inset 0px 0px 30px rgba(80, 50, 30, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 }
+
+.patrons-gold {
+  margin-bottom: 15px;
+}
+
+.patrons-regular {
+}
+
+
+.patrons-gold,
+.patrons-regular {
+  color: #4a5c80;
+  background-color: #446f841f;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 15px 20px;
+  span:last-child {
+    &::after {
+      content: "";
+    }
+  }
+
+  span {
+    &::after {
+      content: ", ";
+    }
+  }
+}
