@@ -82,7 +82,7 @@ h2 {
   background-color: rgba(142, 128, 77, 0.1);
   color: #b14226;
   font-weight: bold;
-  margin-top: -18px;
+  //margin-top: -18px;
   margin-left: -38px;
   margin-right: -38px;
   padding: 18px 38px;
@@ -308,5 +308,37 @@ a.action-button {
 
   &:hover {
     background-color: #1e447dd8;
+  }
+}
+
+.menu {
+  margin: -19px -40px 0 -40px;
+  background-color: rgba(142, 128, 77, 0.25);
+
+  .menu-inner {
+    padding: 10px 38px;
+  }
+
+  a {
+    padding: 14px;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+  }
+
+  a, a:hover {
+    color: inherit;
+  }
+
+  a.title {
+    padding-left: 0;
+    font-weight: bold;
+    &, &:hover {
+      background-color: transparent;
+
+    }
   }
 }
