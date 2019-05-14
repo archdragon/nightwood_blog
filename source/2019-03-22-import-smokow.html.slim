@@ -1,0 +1,124 @@
+---
+
+title: Import smoków i odzyskiwanie kont
+date: 2019-03-22 14:28 UTC
+tags: "nowa edycja, update, stara edycja, odzyskiwanie kont"
+custom_summary: "O tym jak działa import smoków i co udało mi się osiągnąć dzięki pomocy patronów"
+custom_slug: "import-smokow"
+
+---
+
+h2 Import smoków i odzyskiwanie kont
+
+p Właśnie skończyłem pracę nad jednym z ważniejszych elementów nowej edycji gry - importem smoków z dawnego Nightwood.
+
+p Na start system pozwoli wgrać naszego podopiecznego wraz z jego statystykami. Import surowców (rubinów, srebra, przedmiotów) włączę dopiero gdy gra (i ekonomia) nieco się rozkręci i ustabilizuje.
+
+p
+  ' (Poniżej stary dziadek Gilfuin snuje opowieść o powstawaniu importu i dziękuję wspaniałym patronom. Jeśli chcesz od razu przejść do obrazku i opisu
+  a href="#jak-to-dziala" kliknij tu
+  | )
+
+center
+  figure.figure style="max-width: 500px; margin-bottom: 20px"
+    = image_tag "old_man_gilfuin.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+    figcaption.figure-caption "Za moich czasów internet przesyłaliśmy gołębiem, a smoki wycinaliśmy z papieru."
+
+p To kulminacja wielu tygodni pracy. Import sam w sobie nie jest bardzo złożony, jednak do działania potrzebuje masy elementów ze starej i nowej hodowli.
+
+h3 O odzyskiwaniu dawnych smoków i pomocy patronów
+
+p
+  ' Ze wględu na swoją wielkość, dawna baza smoków zawsze sprawiała mi kłopoty. Podobnie jest też z kopią zapasową starego Nightood.
+  ' Składa się na nią kilka plików .tar.gz (skompresowanych archiwów) zajmujących razem kilkanaście gigabajtów - ze względu na fakt,
+  ' że posiadam sprzęt ze stosunkowo małymi dyskami SSD nawet ich rozpakowanie stanowiło dla mnie problem.
+
+p Obawiając się sytuacji jak na obrazku ponieżej, postanowiłem skupić się na przygotowaniu nowej edycji, import smoków zostawiając na później.
+
+p Po wystartowaniu gry planowałem zakup dodatkowego serwera, wypakowanie na nim kopii Nightwood i przygotowanie bazy smoków.
+
+center
+  figure.figure style="max-width: 400px"
+    = image_tag "fixing.gif", class: "img-fluid figure-img", style: "margin-bottom: 20px"
+
+p Dzięki pomocy otrzymanej przez Patronite plan ten byłem w stanie zrealizować znacznie wcześniej.
+
+p Dodatkowo postanowiłem pójść za ciosem, nie zwlekać i przygotować serwer produkcyjny - tak abym grę mógł uruchomić natychmiast, gdy będę gotowy się nią podzielić.
+
+p I tu chciałbym bardzo, bardzo podziękować wszystkim, którzy wsparli Nightwood:
+
+p style="font-weight: bold"
+  | Sobisia, Marcin Chrapkowicz, Narkotyk., Niks, Paweł Bajura, TheLacek, Radosław Uściński. Saphira93, Maelstorm, Sallvador, Michał Czech - AD Rem, Zbikens2k, Care, Saturn97
+
+p oraz
+
+p style="font-weight: bold"
+  | Alcia, Gareciak, Dragon Abyss PBF, Anna_Maria, Monika Kuziemska, Aleksandra Kr, erykturin1999, Vieja, Kensei
+  | Emilia Kubisiak, Iga Błażejewska, Pawwit, Shinsey, DemonTale, Batafurai, Tubka, Catherine_, Krzysztof Kordasiewicz, Wiktor Grodzki
+
+p
+  ' ...i wszystkich wspierających Nightwood na
+  a href="https://patronite.pl/nightwood" target="_blank" Patronite
+  | !
+
+p Dzięki Waszej pomocy gra obecnie może korzystać z:
+ul
+  li Amazon S3, Route 53 i Cloudfront - do przechowywania i serwowania plików bloga oraz gry
+  li Amazon EC2 i Heroku - gdzie żyją produkcyjne i testowe aplikacje gry Nightwood
+  li Mailchimp - systemu, dzięki któremu jestem w stanie wysyłać Wam newsletter
+  li Amazon RDS - gdzie żyją bazy danych Nightwood
+  li Domen internetowych, narzędzi kontroli i przechowywania kodu
+
+p Dzięki! ❤️
+
+h3 id="jak-to-dziala" OK ok, ale jak działa import?
+
+p W bardzo prosty sposób! Wystarczy, wystarczy podać login i hasło z poprzedniej edycji...
+
+p (Jak zwykle wszystkie teksty przygotowuję od razu w dwóch językach - Polskim i Angielskim)
+
+center style="padding-bottom: 50px"
+  figure.figure style="max-width: 600px"
+    = image_tag "import_step_1_pl.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+    figcaption.figure-caption "Pierwszy ekran importu - w języku polskim."
+
+center style="padding-bottom: 50px"
+  figure.figure style="max-width: 300px"
+    = image_tag "import_step_1.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+    figcaption.figure-caption "Pierwszy ekran importu - w języku angielskim."
+
+p ...a przed nami pojawi się lista smoków.
+
+center style="padding-bottom: 50px"
+  figure.figure style="max-width: 600px"
+    = image_tag "import_step_2.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+    figcaption.figure-caption "Lista smoków"
+
+p Wystarczy kliknąć import, potwierdzić i...
+
+center style="padding-bottom: 50px"
+  figure.figure style="max-width: 600px"
+    = image_tag "import_step_3.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+    figcaption.figure-caption "Import smoka"
+
+p Smok jest już w nowej grze.
+
+center style="padding-bottom: 50px"
+  figure.figure style="max-width: 600px"
+    = image_tag "import_step_4.jpg", class: "img-fluid figure-img", style: "margin-bottom: 5px"
+
+h3 A jeśli nie pamiętam swoich danych?
+
+p Nie ma problemu!
+
+p Obok systemu logowania znajduje się też link do strony z przypomnieniem dawnego hasła - oraz formularz kontaktowy dla osób, które nie mają już dostępu do używanego kieedyś maila.
+
+p W takich przypadkach osobiście pomogę z odzyskaniem konta.
+
+h3 Co dalej?
+
+p Chcę jak najszybciej uruchomić testową wersję gry! W jednym z kolejnych artykułów napiszę nieco więcej na temat daty i tego co może na nią wpłynąć.
+
+p Przygotowując ten wpis (oraz system importu) zebrałem ilość materiału, która spokojnie wystarczy na kilka następnych postów.
+
+p W następnym tygodniu zapytam patronów o czym chcieliby przeczytać - i pozwolę im wybrać temat kolejnej notki na blogu!
