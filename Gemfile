@@ -15,3 +15,6 @@ gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem "middleman-blog", "~> 4.0"
+gem 'middleman-s3_sync'
+gem 'middleman-search_engine_sitemap'
+gem 'middleman-dotenv', '~> 2.0'
